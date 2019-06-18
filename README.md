@@ -10,3 +10,4 @@ Used features and functionality:
 - @ui/material lib for UI nice and responsible elements
 - prettier for code styling
 - using fetch for one simple request
+- tests
