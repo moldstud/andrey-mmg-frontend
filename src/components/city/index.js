@@ -10,16 +10,8 @@ import {
   CircularProgress,
   Avatar,
   Box,
-  ExpansionPanel,
-  ExpansionPanelSummary,
-  Typography,
-  ExpansionPanelDetails,
-  List,
-  ListItem,
-  ListItemText,
   TablePagination
 } from "@material-ui/core/index";
-import { ExpandMore } from "@material-ui/icons";
 import Friends from "./Friends";
 
 const CHANGE_FONT_COLOR = "Black";

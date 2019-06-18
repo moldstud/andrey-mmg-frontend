@@ -1,15 +1,6 @@
 import { SUCCESS, ERROR, STARTED, FETCH_CITY } from "./types";
 
-const DEFAULT_HEADERS = {
-  Accept: "application/json",
-  "Content-Type": "application/json"
-};
-
 const CITY = "Brastlewark";
-
-const headers = () => ({
-  ...DEFAULT_HEADERS
-});
 
 const URL_FOR_CITY =
   "https://raw.githubusercontent.com/rrafols/mobile_test/master/data.json";
