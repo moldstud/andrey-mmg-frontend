@@ -5,6 +5,7 @@
   "dependencies": {
     "@material-ui/core": "^4.1.1",
     "@material-ui/icons": "^4.2.0",
+    "enzyme": "^3.10.0",
     "express": "^4.17.1",
     "express-favicon": "^2.0.1",
     "path": "^0.12.7",
@@ -16,6 +17,7 @@
     "redux-thunk": "2.3.0"
   },
   "devDependencies": {
+    "enzyme-adapter-react-16": "^1.14.0",
     "expect": "^24.8.0",
     "fetch-mock": "^7.3.3",
     "prettier": "1.18.2",
@@ -25,7 +27,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test": "react-scripts test"
   },
   "browserslist": {
     "production": [

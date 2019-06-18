@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 
 import { fetchCity } from "../actions/actions";
-import Index from "../components/city";
+import City from "../components/city";
 
 class App extends Component {
   componentDidMount() {
@@ -11,7 +11,7 @@ class App extends Component {
 
   render() {
     const { fetchCity, city } = this.props;
-    return <Index city={city} fetchCity={fetchCity} />;
+    return <City city={city} fetchCity={fetchCity} />;
   }
 }
 
@@ -20,7 +20,6 @@ const mapDispatchToProps = dispatch => ({
 });
 
 const mapStateToProps = ({ city }) => {
-  console.log({ city });
   return { city };
 };
 
