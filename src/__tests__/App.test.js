@@ -15,6 +15,24 @@ it('renders without crashing', () => {
 
 it('renders CircularProgress', () => {
     const wrapper = shallow(<City city={city} />);
-    // expect(wrapper.contains(welcome)).toBe(true);
     expect(wrapper.contains(<CircularProgress/>)).toEqual(true);
+});
+
+it('do not renders CircularProgress', () => {
+    const wrapper = shallow(<City city={{...city, isFetching: false}} />);
+    expect(wrapper.contains(<CircularProgress/>)).toEqual(false);
+});
+
+it('renders error', () => {
+    const errorText = 'Test error message'
+    const wrapper = shallow(<City city={{...city, error: errorText}} />);
+    const error = <div>{errorText}</div>
+    expect(wrapper.contains(error)).toEqual(true);
+});
+
+it('do not renders error', () => {
+    const errorText = 'Test error message'
+    const wrapper = shallow(<City city={{...city, error: false}} />);
+    const error = <div>{errorText}</div>
+    expect(wrapper.contains(error)).toEqual(false);
 });
