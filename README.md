@@ -1,5 +1,12 @@
 # mobile_test
-Mobile development code assessment data
-можно написать им, что есть небольшой баг в приложухе
-когда открываешь профиль, затем нажимаешь Edit, то потом ты не можешь выйти из этого экрана, только если перезагрузить приложение, либо сохранить изменения, кнопки cancel нет
-так же, если нажать на свою аватарку в чате, то выйти из своего профиля вообще никак нельзя, только перезагружать приложуху или перелогиниться заново
+Frontend Test App
+
+We have a list of people from a town called Brastlewark
+Json Data URL: https://raw.githubusercontent.com/rrafols/mobile_test/master/data.json
+
+Used features and functionality:
+- ES6
+- stack of main libs: react, redux, thunk
+- @ui/material lib for UI nice and responsible elements
+- prettier for code styling
+- using fetch for one simple request
